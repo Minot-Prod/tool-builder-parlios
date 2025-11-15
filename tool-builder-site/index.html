@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang='fr'>
+<head>
+  <meta charset='UTF-8' />
+  <title>Parlios Tool Forge – Tool builder</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      background: #020617;
+      color: #e5e7eb;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .shell {
+      width: 100%;
+      max-width: 960px;
+      background: radial-gradient(circle at top left, #0f172a, #020617);
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.8);
+      overflow: hidden;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: rgba(15, 23, 42, 0.98);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+      font-size: 13px;
+    }
+    header .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+    }
+    header strong {
+      font-weight: 600;
+    }
+    main {
+      padding: 28px 24px 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 24px;
+    }
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 20px 16px 18px;
+      }
+    }
+    .title {
+      font-size: 28px;
+      font-weight: 650;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #9ca3af;
+      max-width: 32rem;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      background: rgba(15, 118, 110, 0.16);
+      color: #a5f3fc;
+      border: 1px solid rgba(45, 212, 191, 0.4);
+      margin-bottom: 12px;
+    }
+    .pill span {
+      font-size: 16px;
+      line-height: 1;
+    }
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: none;
+      background: linear-gradient(135deg, #22c55e, #22d3ee);
+      color: #022c22;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(34, 197, 94, 0.35);
+      transition: transform 0.08s ease, box-shadow 0.08s ease, filter 0.08s ease;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 45px rgba(34, 197, 94, 0.45);
+      filter: brightness(1.05);
+    }
+    .btn-primary span.icon {
+      font-size: 16px;
+    }
+    .hint {
+      font-size: 12px;
+      color: #9ca3af;
+      margin-top: 6px;
+    }
+    .panel {
+      padding: 14px 14px 12px;
+      border-radius: 14px;
+      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.12), rgba(15, 23, 42, 0.98));
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 12px;
+      color: #cbd5f5;
+    }
+    .panel-title {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #e5e7eb;
+    }
+    .panel ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .panel li {
+      margin: 3px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class='shell'>
+    <header>
+      <span class='dot'></span>
+      <strong>Parlios Tool Forge</strong>
+      <span>- Tool builder</span>
+    </header>
+    <main>
+      <section>
+        <div class='pill'>
+          <span>✨</span>
+          <span>Studio d'outils IA pour entrepreneurs</span>
+        </div>
+        <h1 class='title'>Conçois tes outils Parlios en quelques minutes</h1>
+        <p class='subtitle'>
+          Tool Forge te permet de transformer des idées floues en outils IA structurés&nbsp;:
+          prompts, fiches techniques, pages web et packs prêts à être déployés dans l'écosystème Parlios.
+        </p>
+        <div class='btn-row'>
+          <a class='btn-primary' href='https://parlios-tool-forge-0e3536ac.base44.app/?is_new_user=true' target='_blank' rel='noopener noreferrer'>
+            <span class='icon'>🚀</span>
+            <span>Ouvrir Parlios Tool Forge</span>
+          </a>
+        </div>
+        <p class='hint'>
+          Le studio s'ouvre dans un nouvel onglet hébergé sur Base44. Tu peux revenir ici à tout moment.
+        </p>
+      </section>
+      <aside>
+        <div class='panel'>
+          <div class='panel-title'>Ce que tu peux faire avec Tool Forge</div>
+          <ul>
+            <li>Créer des outils Parlios cohérents, versionnés et brandés.</li>
+            <li>Générer prompts, specs JSON, et contenus pour le site.</li>
+            <li>Assembler des packs d'outils pour différents profils.</li>
+            <li>Préparer des exports prêts pour Parlios Engine.</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
